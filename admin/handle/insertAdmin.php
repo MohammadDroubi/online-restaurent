@@ -21,9 +21,9 @@ if(isset($_POST['submit']))
      {
         $errors[]="name should be string";
      }
-     else if (strlen($name)>100)
+     else if (strlen($name)>50)
      {
-        $errors[]="name size should be less than 50";
+        $errors[]="Name size must be less than 50";
      }
 
       //user name validation
@@ -35,9 +35,9 @@ if(isset($_POST['submit']))
      {
         $errors[]="user name should be string";
      }
-     else if (strlen($username)>100)
+     else if (strlen($username)>50)
      {
-        $errors[]="user name size should be less than 50";
+        $errors[]="User Name size must be less than 50";
      }
 
       //password validation

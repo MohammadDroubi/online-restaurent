@@ -23,7 +23,7 @@ if(isset($_POST['submit']))
     if(password_verify($password,$adminPass))
     {
         $_SESSION['adminid']=$admin['id'];
-        header("location: ../admin.php");
+        header("location: ../index.php");
     }
     else
     {
